@@ -1,5 +1,5 @@
 // var adminurl = "http://104.197.84.255/";
-var adminurl = "http://localhost:1337/";
+var adminurl = "http://localhost/";
 // var adminurl = "http://104.199.151.75/";
 // var adminurl = "http://104.199.142.53/";
 var imgurl = adminurl + "upload/";
