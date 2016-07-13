@@ -11,47 +11,17 @@ var navigationservice = angular.module('navigationservice', [])
     var navigation = [{
         name: "Users",
         classis: "active",
-        link: "#/page/userView",
+        link: "#/page/viewUser",
+        subnav: []
+    }, {
+        name: "Country",
+        classis: "active",
+        link: "#/page/viewCountry",
         subnav: []
     }, {
         name: "City",
         classis: "active",
         link: "#/page/viewCity",
-        subnav: []
-    }, {
-        name: "Slider",
-        classis: "active",
-        link: "#/page/viewSlider",
-        subnav: []
-    }, {
-        name: "Config",
-        classis: "active",
-        link: "#/page/viewConfig",
-        subnav: []
-    }, {
-        name: "Explore Smaash",
-        classis: "active",
-        link: "#/page/viewExploreSmash",
-        subnav: []
-    }, {
-        name: "Promotions",
-        classis: "active",
-        link: "#/page/viewPromotions",
-        subnav: []
-    }, {
-        name: "Recharge Smaash Card",
-        classis: "active",
-        link: "#/page/viewRechargeSmaashCard",
-        subnav: []
-    }, {
-        name: "Stars",
-        classis: "active",
-        link: "#/page/viewStars",
-        subnav: []
-    }, {
-        name: "Events",
-        classis: "active",
-        link: "#/page/viewEvent",
         subnav: []
     }];
 

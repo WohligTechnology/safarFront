@@ -1,0 +1,33 @@
+{
+    "title": "Create City",
+    "jsonPage": "viewCity",
+    "desciption": "",
+    "pageType": "create",
+    "fields": [{
+        "name": "Name",
+        "type": "text",
+        "tableRef": "name",
+        "placeholder": "Enter name",
+        "id": "input2",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }],
+    "action": [{
+        "name": "submit",
+        "action": "submitCity"
+    }, {
+        "name": "cancel",
+        "stateName": "page({jsonName:'viewCity'})"
+    }],
+
+    "apiCall": {
+        "url": "city/save"
+    },
+
+    "sidemenu": [{
+        "url": "",
+        "anchor": "",
+        "state": "",
+        "action": ""
+    }]
+}

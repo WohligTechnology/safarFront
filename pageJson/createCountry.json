@@ -1,0 +1,33 @@
+{
+    "title": "Create Country",
+    "jsonPage": "viewCountry",
+    "desciption": "",
+    "pageType": "create",
+    "fields": [{
+        "name": "Name",
+        "type": "text",
+        "tableRef": "name",
+        "placeholder": "Enter name",
+        "id": "input2",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }],
+    "action": [{
+        "name": "submit",
+        "action": "submitCountry"
+    }, {
+        "name": "cancel",
+        "stateName": "page({jsonName:'viewCountry'})"
+    }],
+
+    "apiCall": {
+        "url": "country/save"
+    },
+
+    "sidemenu": [{
+        "url": "",
+        "anchor": "",
+        "state": "",
+        "action": ""
+    }]
+}
