@@ -53,5 +53,12 @@
     "preApi": {
         "url": "itinerary/getOne",
         "params": "_id"
-    }
+    },
+    "sidemenu": [{
+        "name": "Countries Visited",
+        "action": "sidemenuRedirect",
+        "jsonPage": "viewItineraryCountryVisited",
+        "fieldsToSend": [1],
+        "callFindOne": "user/getOne"
+    }]
 }
