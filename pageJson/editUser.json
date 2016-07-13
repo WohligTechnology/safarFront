@@ -23,6 +23,15 @@
         "url": "",
         "model": "firstName"
     }, {
+        "name": "Last Name",
+        "type": "text",
+        "tableRef": "lastName",
+        "placeholder": "Enter name",
+        "id": "input2",
+        "validation": ["required", "trim", "unique"],
+        "url": "",
+        "model": "lastName"
+    }, {
         "name": "Email",
         "type": "email",
         "tableRef": "email",

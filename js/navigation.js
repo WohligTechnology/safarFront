@@ -14,14 +14,19 @@ var navigationservice = angular.module('navigationservice', [])
         link: "#/page/viewUser",
         subnav: []
     }, {
-        name: "Country",
+        name: "Countries",
         classis: "active",
         link: "#/page/viewCountry",
         subnav: []
     }, {
-        name: "City",
+        name: "Cities",
         classis: "active",
         link: "#/page/viewCity",
+        subnav: []
+    }, {
+        name: "Itineraries",
+        classis: "active",
+        link: "#/page/viewItinerary",
         subnav: []
     }];
 

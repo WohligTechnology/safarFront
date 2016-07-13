@@ -1,0 +1,53 @@
+{
+    "title": "All Itineraries",
+    "desciption": "",
+    "pageType": "view",
+    "fields": [{
+        "name": "Title",
+        "isSort": "",
+        "tableRef": "title"
+    },{
+        "name": "Itinerary Type",
+        "isSort": "",
+        "tableRef": "itineraryType"
+    }],
+    "action": [{
+        "name": "edit",
+        "icon": "mode_edit",
+        "color": "blue",
+        "action": "redirect",
+        "jsonPage": "editItinerary",
+        "fieldsToSend": ["_id"],
+        "callFindOne": "itinerary/getOne"
+    }, {
+        "name": "delete",
+        "icon": "delete",
+        "color": "red",
+        "action": "apiCallConfirm",
+        "title": "Delete Itinerary",
+        "content": "Are you sure you want to delete itinerary?",
+        "api": "itinerary/delete",
+        "fieldsToSend": [{
+            "name": "_id",
+            "value": "_id"
+        }]
+    }],
+    "button": [{
+        "name": "excelexport",
+        "icon": "print",
+        "color": "blue",
+        "action": "excelexport"
+    }, {
+        "name": "uploadcsv",
+        "icon": "delete",
+        "color": "red",
+        "action": "uploadcsv"
+    }],
+
+    "apiCall": {
+        "url": "itinerary/findLimited",
+        "params": ""
+    },
+    "createButtonState": "page({jsonName:'createItinerary'})"
+
+}

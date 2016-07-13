@@ -1,0 +1,47 @@
+{
+    "title": "Create Itinerary",
+    "jsonPage": "viewItinerary",
+    "desciption": "",
+    "pageType": "create",
+    "fields": [{
+        "name": "Title",
+        "type": "text",
+        "tableRef": "title",
+        "placeholder": "Enter title",
+        "id": "input2",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    },{
+        "name": "Itinerary Type",
+        "type": "select",
+        "tableRef": "itineraryType",
+        "placeholder": "Enter Itinerary Type",
+        "id": "input3",
+        "validation": ["required", "trim", "unique"],
+        "url": [{
+            "value": "Adventure",
+            "name": "Adventure"
+        }, {
+            "value": "Business",
+            "name": "Business"
+        }]
+    }],
+    "action": [{
+        "name": "submit",
+        "action": "submitItinerary"
+    }, {
+        "name": "cancel",
+        "stateName": "page({jsonName:'viewItinerary'})"
+    }],
+
+    "apiCall": {
+        "url": "itinerary/save"
+    },
+
+    "sidemenu": [{
+        "url": "",
+        "anchor": "",
+        "state": "",
+        "action": ""
+    }]
+}
